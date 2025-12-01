@@ -1,0 +1,411 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans‐serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(148, 192, 148);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-left h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right .nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-right .nav-btn:hover {
+  color: #333;
+}
+
+.page-section#home {
+  display: flex;               /* places children side-by-side */
+  align-items: upside;         /* vertically center photo & text */
+  justify-content: center;     /* horizontally center the whole block in the container */
+  gap: 40px;                   /* space between photo and text */
+  padding: 80px 80px;          /* vertical + horizontal padding */
+  background-color: #f0f4f8;   /* light background */
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1500px;
+  margin: 0 auto;              /* center block in viewport horizontally */
+  min-height: 400px;
+}
+.bottom {
+  background: #95cdb2;
+  height: 60vh;
+  padding: 40px;
+  color: #083b24;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.skill-block {
+  flex: 1;
+}
+
+.skill-block h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #024426;
+  border-bottom: 2px solid #024426;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.skill-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
+.photo-container {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  flex-shrink: 0;              /* prevent it from shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-text {
+  max-width: 450px;
+   margin-bottom:-8px;          /* prevents the text block from being too wide */
+}
+
+.home-text h2 {
+  font-size: 2.2rem;
+  margin-bottom:1px;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.contact-links {
+  margin-top: 30px;           /* space above contact links */
+  display: flex;
+  flex-direction: column;     /* stack vertically */
+  gap: 12px;                  /* space between each link/item */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: none;               /* you can apply grayscale or colour if you want */
+}
+
+.contact-item:hover {
+  color: #0078d7;            /* nicer hover color */
+}
+
+.contact-item:hover .icon {
+  filter: brightness(0.8);
+}
+/* Section Title */
+/* Centered Section Title (like Education) */
+.section-title {
+  font-size: 2rem;
+  color: #2a4d37;
+  margin: 40px 0 20px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(148, 192, 148);
+  display: inline-block;
+  padding-bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+/* Ensure achievements section content stays centered */
+#achievements {
+  text-align: center;
+}
+
+/* Already existing card styles will work */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;   /* centers your cards */
+}
+
+/* Education container */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each education card */
+.edu-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid rgb(148, 192, 148);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Headings */
+.edu-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  color: #1e3d29;
+}
+
+/* Sub-text styling */
+.edu-sub, .edu-college, .edu-score, .edu-year, .edu-location {
+  font-size: 1.05rem;
+  margin: 3px 0;
+  color: #333;
+}
+
+.edu-year {
+  font-style: italic;
+  color: #666;
+}
+/* Sub-heading inside each section */
+.sub-heading {
+  font-size: 1.8rem;
+  color: #2a4d37;
+  margin: 20px 0 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Container holding all cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+/* Individual card design */
+.info-card {
+  background: #ffffff;
+  padding: 22px 28px;
+  border-radius: 12px;
+  border-left: 6px solid rgb(148, 192, 148);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Card Title */
+.info-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #1e3d29;
+  font-weight: bold;
+}
+
+/* Organization name */
+.card-source {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Description text */
+.card-desc {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.5;
+}
+/* Achievements Title */
+.section-title {
+ font-size: 2rem;
+  color: #2a4d37;
+  margin: 40px 0 20px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(148, 192, 148);
+  display: inline-block;
+  padding-bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+/* Reuse card-container & info-card styling already added */
+
+/* Contact Section Title */
+.contact-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #2a4d37;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 4px solid rgb(148, 192, 148);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Main contact container */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual contact cards */
+.contact-card {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border-left: 6px solid rgb(148, 192, 148);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.contact-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e3d29;
+}
+
+.contact-card p {
+  margin: 3px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Icons */
+.c-icon {
+  width: 40px;
+  height: 40px;
+}
+/* Make all content fit mobile screens */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Images should not overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text and container spacing */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Buttons and links */
+button, a {
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+/* Mobile responsive rules */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    /* If you used flexbox */
+    .flex {
+        flex-direction: column;
+    }
+}
+
+
