@@ -683,7 +683,7 @@ button, a {
 }
 .mobile-home {
   color: white;
-  font-size: 22px; 
+  font-size: 35px; 
   font-weight: bold;
   text-decoration: none !important;  
   cursor: pointer;
@@ -693,6 +693,7 @@ button, a {
   color: white;                 /* no color change */
   text-decoration: none !important;  /* no underline */
 }
+
 
 
 
