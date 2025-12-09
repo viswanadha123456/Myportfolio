@@ -681,5 +681,18 @@ button, a {
   }
   /* ... rest ... */
 }
+.mobile-home {
+  color: white;
+  font-size: 22px; 
+  font-weight: bold;
+  text-decoration: none !important;  
+  cursor: pointer;
+}
+
+.mobile-home:hover {
+  color: white;                 /* no color change */
+  text-decoration: none !important;  /* no underline */
+}
+
 
 
