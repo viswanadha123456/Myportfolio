@@ -498,29 +498,10 @@ I work across the full data lifecycle — from cleaning and structuring complex 
     </div>
   </div>
 
-<script>
-document.querySelector(".menu-btn").onclick = function () {
-  document.querySelector(".mobile-menu").style.display =
-    document.querySelector(".mobile-menu").style.display === "flex"
-      ? "none"
-      : "flex";
-};
-
-document.querySelectorAll(".m-menu-item").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const target = btn.getAttribute("data-section");
-
-    document.querySelector(".mobile-menu").style.display = "none";
-
-    document.querySelectorAll('.page-section').forEach(sec => {
-      sec.style.display = sec.id === target ? 'block' : 'none';
-    });
-  });
-});
-</script>
 
 </body>
 </html>
+
 
 
 
