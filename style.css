@@ -593,15 +593,18 @@ button, a {
   background: white;
 }
 
-/* Dropdown menu */
+/* Dropdown menu - FIXED POSITIONING */
 .mobile-menu {
   display: none;
   flex-direction: column;
   background: white;
-  padding: 15px;
-  position: sticky;
-  top: 60px;
-  z-index: 190;
+  padding: 20px;
+  position: fixed;  /* CHANGED: fixed instead of sticky */
+  top: 70px;        /* CHANGED: below mobile navbar */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   border-bottom: 3px solid rgb(148,192,148);
 }
 
@@ -610,51 +613,77 @@ button, a {
   border: none;
   text-align: left;
   font-size: 18px;
-  padding: 12px 5px;
+  padding: 15px 20px;
   width: 100%;
   color: #083b24;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.m-menu-item:hover {
+  background: rgb(148,192,148);
+  color: white;
+}
+
+
+/* MEDIA QUERIES */
+/* CRITICAL: Mobile navbar show/hide - SIMPLIFIED */
+@media (max-width: 768px) {
+  .navbar { 
+    display: none !important;  /* Hide desktop navbar completely */
+  }
+  .mobile-navbar { 
+    display: flex !important;  /* Force show mobile navbar */
+  }
+  
+  .page-section#home {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+/* --- MOBILE NAVBAR --- */
+.mobile-navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(148,192,148);
+  padding: 12px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+/* ... all your .mobile-left, .mobile-icons, .m-icon, .divider styles ... */
+
+/* Dropdown menu - FIXED POSITIONING */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* ... rest of your fixed mobile-menu styles ... */
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-  .navbar { display: none; } /* hide desktop navbar */
-  .mobile-navbar { display: flex; } /* show mobile navbar */
-}
-/* Hide mobile navbar by default on large screens */
-.mobile-navbar {
-  display: none;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-between;
+  .navbar { 
+    display: none !important;
+  }
+  .mobile-navbar { 
+    display: flex !important;
+  }
+  /* ... rest ... */
 }
 
-/* Show mobile navbar on small screens */
-@media screen and (max-width: 768px) {
-  .navbar-right { 
-    display: none;  /* hide desktop nav */
-  }
-  .mobile-navbar {
-    display: flex;
-  }
-}
 
-/* Mobile menu dropdown */
-.mobile-menu {
-  display: none;  /* hidden by default */
-  flex-direction: column;
-  background-color: #f8f8f8;
-  position: absolute;
-  top: 60px; /* adjust based on navbar height */
-  width: 100%;
-  z-index: 1000;
-}
-.mobile-navbar {
-  position: relative;
-  z-index: 10;
-}
+
+
+
 
