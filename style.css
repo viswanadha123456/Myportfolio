@@ -616,6 +616,71 @@ button, a {
   .navbar { display: none; }
   .mobile-navbar { display: flex; }
 }
+/* MOBILE NAVBAR */
+.mobile-navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(148,192,148);
+  padding: 12px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.mobile-left h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.mobile-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.m-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.divider {
+  width: 1px;
+  background: white;
+  height: 20px;
+}
+
+/* MOBILE MENU DROPDOWN */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: 15px;
+  position: sticky;
+  top: 60px; /* below navbar */
+  z-index: 190;
+  border-bottom: 3px solid rgb(148,192,148);
+}
+
+.m-menu-item {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  padding: 12px 5px;
+  width: 100%;
+  color: #083b24;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navbar { display: none; } /* hide desktop navbar */
+  .mobile-navbar { display: flex; } /* show mobile navbar */
+}
 
 
 
