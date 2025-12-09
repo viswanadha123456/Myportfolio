@@ -526,8 +526,66 @@ document.querySelectorAll(".m-menu-item").forEach(btn => {
   });
 });
 </script>
+  <script>
+const languageBtn = document.getElementById("language-btn");
+const languageMenu = document.getElementById("language-menu");
+
+languageBtn.onclick = () => {
+  languageMenu.style.display =
+    languageMenu.style.display === "flex" ? "none" : "flex";
+};
+
+const translations = {
+  en: {
+    home_title: "Pasupula Viswanadha",
+    about: "About",
+    Internships: "Internships",
+    projects: "Projects",
+    contact: "Contact"
+  },
+  te: {
+    home_title: "పసుపుల విశ్వనాథ్",
+    about: "నా గురించి",
+    Internships: "ఇంటర్న్షిప్స్",
+    projects: "ప్రాజెక్టులు",
+    contact: "సంప్రదించండి"
+  },
+  hi: {
+    home_title: "पसुपुला विश्वनाथ",
+    about: "मेरे बारे में",
+    Internships: "इंटर्नशिप",
+    projects: "प्रोजेक्ट्स",
+    contact: "संपर्क करें"
+  },
+  ta: {
+    home_title: "பசுபுலா விஸ்வநாத்",
+    about: "என்னை பற்றி",
+    Internships: "இணையாடல்",
+    projects: "திட்டங்கள்",
+    contact: "தொடர்பு"
+  }
+};
+
+// apply language
+document.querySelectorAll(".language-menu button").forEach(btn => {
+  btn.onclick = () => {
+    let lang = btn.getAttribute("data-lang");
+    
+    document.getElementById("home_title").textContent = translations[lang].home_title;
+
+    document.querySelectorAll("[data-section]").forEach(item => {
+      let sec = item.getAttribute("data-section");
+      item.textContent = translations[lang][sec];
+    });
+
+    languageMenu.style.display = "none";
+  };
+});
+</script>
+
 </body>
 </html>
+
 
 
 
