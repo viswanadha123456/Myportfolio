@@ -509,5 +509,50 @@ button, a {
     font-size: 14px;
   }
 }
+/* FIX BOTTOM SKILLS SECTION FOR MOBILE */
+@media (max-width: 768px) {
+
+  .bottom {
+    height: auto !important;    /* allow section to grow */
+    padding: 20px !important;
+  }
+
+  .skills-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .skill-block {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .skill-block h3 {
+    font-size: 18px !important;
+  }
+
+  .skill-block ul li {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skills-container {
+    gap: 14px !important;
+  }
+
+  .skill-block h3 {
+    font-size: 16px !important;
+  }
+
+  .skill-block ul li {
+    font-size: 14px !important;
+  }
+}
+
+
 
 
