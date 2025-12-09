@@ -408,4 +408,105 @@ button, a {
     }
 }
 
+/* =========================================================
+   RESPONSIVE DESIGN FIX FOR ALL SCREENS (MOBILE + TABLET)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-section#home {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skill-block {
+    min-width: 200px;
+  }
+}
+@media (max-width: 600px) {
+
+  h1 { font-size: 20px; }
+  h2 { font-size: 22px; }
+  p  { font-size: 15px; }
+
+  .photo-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .navbar-right .nav-btn {
+    font-size: 16px;
+  }
+
+  .page-section {
+    padding: 20px 10px;
+  }
+
+  .info-card,
+  .edu-card,
+  .contact-card {
+    padding: 18px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container,
+  .education-container {
+    width: 95%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-left h1 {
+    font-size: 18px;
+  }
+
+  .navbar-right .nav-btn {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .photo-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home-text p {
+    font-size: 14px;
+  }
+}
 
