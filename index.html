@@ -7,7 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- MOBILE NAVBAR -->
+<div class="mobile-navbar">
+  <div class="mobile-left">
+    <h2>Viswanadha</h2>
+  </div>
+
+  <div class="mobile-icons">
+    <span class="m-icon">🔍</span>
+    <span class="divider"></span>
+
+    <a href="your-resume-link" target="_blank" class="m-icon">🌐</a>
+    <span class="divider"></span>
+
+    <a href="mailto:viswanadhp150@gmail.com" class="m-icon">✉</a>
+    <span class="divider"></span>
+
+    <span class="m-icon menu-btn">☰</span>
+  </div>
+</div>
+
+<!-- MENU DROPDOWN -->
+<div class="mobile-menu">
+  <button class="m-menu-item" data-section="about">About</button>
+  <button class="m-menu-item" data-section="Internships">Internships</button>
+  <button class="m-menu-item" data-section="projects">Projects</button>
+  <button class="m-menu-item" data-section="contact">Contact</button>
+</div>
   <div class="navbar">
+    
     <div class="navbar-left">
       <h1>Pasupula Viswanadha</h1>
     </div>
@@ -471,10 +499,29 @@ I work across the full data lifecycle — from cleaning and structuring complex 
 
     </div>
   </div>
+<script>
+document.querySelector(".menu-btn").onclick = function () {
+  document.querySelector(".mobile-menu").style.display =
+    document.querySelector(".mobile-menu").style.display === "flex"
+      ? "none"
+      : "flex";
+};
 
+document.querySelectorAll(".m-menu-item").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-section");
 
+    document.querySelector(".mobile-menu").style.display = "none";
+
+    document.querySelectorAll('.page-section').forEach(sec => {
+      sec.style.display = sec.id === target ? 'block' : 'none';
+    });
+  });
+});
+</script>
 </body>
 </html>
+
 
 
 
