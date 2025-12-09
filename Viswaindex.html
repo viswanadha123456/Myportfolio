@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar Example</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Desktop Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(148, 192, 148);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar-left h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    .navbar-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      color: #333;
+    }
+
+    /* Mobile Navbar */
+    .mobile-navbar {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(148,192,148);
+      padding: 12px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .mobile-left h2 {
+      color: white;
+      font-size: 20px;
+    }
+
+    .mobile-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .m-icon {
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: white;
+      padding: 15px;
+      position: sticky;
+      top: 60px;
+      z-index: 190;
+      border-bottom: 3px solid rgb(148,192,148);
+    }
+
+    .m-menu-item {
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 18px;
+      padding: 12px 5px;
+      width: 100%;
+      color: #083b24;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    /* Responsive rules */
+    @media (max-width: 768px) {
+      .navbar { display: none; }
+      .mobile-navbar { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Desktop Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <h1>My Logo</h1>
+    </div>
+    <div class="navbar-right">
+      <button class="nav-btn">Home</button>
+      <button class="nav-btn">About</button>
+      <button class="nav-btn">Contact</button>
+    </div>
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div class="mobile-navbar">
+    <div class="mobile-left">
+      <h2>My Logo</h2>
+    </div>
+    <div class="mobile-icons">
+      <span class="m-icon" id="menu-toggle">&#9776;</span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="m-menu-item">Home</button>
+    <button class="m-menu-item">About</button>
+    <button class="m-menu-item">Contact</button>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      if(mobileMenu.style.display === "flex") {
+        mobileMenu.style.display = "none";
+      } else {
+        mobileMenu.style.display = "flex";
+      }
+    });
+  </script>
+
+</body>
+</html>
