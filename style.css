@@ -623,3 +623,38 @@ button, a {
   .navbar { display: none; } /* hide desktop navbar */
   .mobile-navbar { display: flex; } /* show mobile navbar */
 }
+/* Hide mobile navbar by default on large screens */
+.mobile-navbar {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Show mobile navbar on small screens */
+@media screen and (max-width: 768px) {
+  .navbar-right { 
+    display: none;  /* hide desktop nav */
+  }
+  .mobile-navbar {
+    display: flex;
+  }
+}
+
+/* Mobile menu dropdown */
+.mobile-menu {
+  display: none;  /* hidden by default */
+  flex-direction: column;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 60px; /* adjust based on navbar height */
+  width: 100%;
+  z-index: 1000;
+}
+.mobile-navbar {
+  position: relative;
+  z-index: 10;
+}
+
