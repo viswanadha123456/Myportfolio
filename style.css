@@ -643,4 +643,42 @@ button, a {
     padding: 40px 20px;
   }
 }
+/* --- MOBILE NAVBAR --- */
+.mobile-navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(148,192,148);
+  padding: 12px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+/* ... all your .mobile-left, .mobile-icons, .m-icon, .divider styles ... */
+
+/* Dropdown menu - FIXED POSITIONING */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* ... rest of your fixed mobile-menu styles ... */
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navbar { 
+    display: none !important;
+  }
+  .mobile-navbar { 
+    display: flex !important;
+  }
+  /* ... rest ... */
+}
 
