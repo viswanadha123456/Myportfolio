@@ -9,6 +9,13 @@
 <body>
   <!-- MOBILE NAVBAR -->
 <div class="mobile-navbar">
+  <div class="language-menu" id="language-menu">
+  <button data-lang="en">English</button>
+  <button data-lang="te">తెలుగు</button>
+  <button data-lang="hi">हिंदी</button>
+  <button data-lang="ta">தமிழ்</button>
+</div>
+
   <div class="mobile-left">
     <a href="index.html" class="mobile-home">Home</a>
   </div>
@@ -17,7 +24,7 @@
     <span class="m-icon">🔍</span>
     <span class="divider"></span>
 
-    <a href="your-resume-link" target="_blank" class="m-icon">🌐</a>
+   <span class="m-icon" id="language-btn">🌐</span>
     <span class="divider"></span>
 
     <a href="mailto:viswanadhp150@gmail.com" class="m-icon">✉</a>
@@ -521,6 +528,7 @@ document.querySelectorAll(".m-menu-item").forEach(btn => {
 </script>
 </body>
 </html>
+
 
 
 
