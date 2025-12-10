@@ -727,6 +727,19 @@ button, a {
   background: rgb(148,192,148);
   color: white;
 }
+.navbar-home {
+  color: white;
+  font-size: 20px; 
+  font-weight: bold;
+  text-decoration: none !important;  
+  cursor: pointer;
+}
+
+.mobile-home:hover {
+  color: white;                 /* no color change */
+  text-decoration: none !important;  /* no underline */
+}
+
 
 
 
