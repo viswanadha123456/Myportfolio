@@ -759,7 +759,7 @@ button, a {
   }
 
   .mobile-download-btn {
-    width: 90%;
+    width: 180%;
     background: #1E63FF;  /* Same BLUE as screenshot */
     color: white;
     padding: 14px 20px;
@@ -784,6 +784,7 @@ button, a {
     font-size: 20px;
   }
 }
+
 
 
 
