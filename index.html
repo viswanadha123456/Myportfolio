@@ -66,6 +66,14 @@
 I work across the full data lifecycle — from cleaning and structuring complex datasets, building automated pipelines, to designing interactive dashboards and reports.
  I thrive on combining data engineering and visualization to enable smarter business decisions and efficient workflows..</p>
     </div>
+    <!-- MOBILE ONLY RESUME DOWNLOAD BUTTON -->
+<div class="mobile-download-box">
+  <button id="downloadResumeBtn" class="mobile-download-btn">
+    <span class="left-icon">⬇</span>
+    Download Resume
+    <span class="right-icon">→</span>
+  </button>
+</div>
 
 <div class="contact-links">
    <a href="https://www.linkedin.com/in/viswanadha-p-a31b2b252/" target="_blank" class="contact-item">
@@ -592,13 +600,6 @@ document.querySelectorAll(".language-menu button").forEach(btn => {
     themeMenu.style.display =
       themeMenu.style.display === "none" ? "block" : "none";
   };
-// Toggle Mobile Menu
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
-
-// Resume Download Button
 document.getElementById("downloadResumeBtn").onclick = function () {
   const link = document.createElement("a");
   link.href = "Viswanadha_Resume.pdf";  // your resume file
@@ -608,8 +609,10 @@ document.getElementById("downloadResumeBtn").onclick = function () {
 
 
 
+
 </body>
 </html>
+
 
 
 
