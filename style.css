@@ -739,12 +739,12 @@ button, a {
   color: white;                 /* no color change */
   text-decoration: none !important;  /* no underline */
 }
-/* Hide contact links on screens smaller than 768px (mobile) */
 @media only screen and (max-width: 768px) {
   .contact-links {
-    display: none;
+    display: none !important;
   }
 }
+
 
 
 
