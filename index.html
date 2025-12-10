@@ -21,9 +21,18 @@
     <a href="index.html" class="mobile-home">Home</a>
   </div>
 
-  <div class="mobile-icons">
-    <span class="m-icon">🔍</span>
-    <span class="divider"></span>
+   <span class="m-icon" id="theme-btn">🌗</span>
+
+    <!-- THEME DROPDOWN -->
+    <div id="theme-menu"
+         style="display:none; position:absolute; right:10px; top:55px;
+                background:#fff; padding:10px; border-radius:8px; 
+                box-shadow:0 4px 10px rgba(0,0,0,0.2);
+                z-index:999;">
+      <button onclick="setTheme('light')" style="display:block; width:100%; padding:6px;">Light</button>
+      <button onclick="setTheme('dark')" style="display:block; width:100%; padding:6px;">Dark</button>
+      <button onclick="setTheme('system')" style="display:block; width:100%; padding:6px;">System</button>
+    </div>
 
    <span class="m-icon" id="language-btn">🌐</span>
     <span class="divider"></span>
@@ -586,6 +595,7 @@ document.querySelectorAll(".language-menu button").forEach(btn => {
 
 </body>
 </html>
+
 
 
 
