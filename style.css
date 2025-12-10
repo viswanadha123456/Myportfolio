@@ -735,10 +735,11 @@ button, a {
   cursor: pointer;
 }
 
-.mobile-home:hover {
+.navbar-home:hover {
   color: white;                 /* no color change */
   text-decoration: none !important;  /* no underline */
 }
+
 
 
 
