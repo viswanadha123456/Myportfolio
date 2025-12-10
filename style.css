@@ -745,6 +745,36 @@ button, a {
   }
 }
 
+/* Hide button on desktop */
+.mobile-resume-download {
+  display: none;
+}
+
+/* Show only on mobile screens */
+@media only screen and (max-width: 768px) {
+  .mobile-resume-download {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mobile-resume-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #8a2be2, #4b6cf7);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .mobile-resume-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
 
 
 
