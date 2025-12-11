@@ -122,42 +122,54 @@ I work across the full data lifecycle — from cleaning and structuring complex 
   </div>
 
 </div>
-<section id="projects-mobile" class="page-section">
-  <h2 class="section-title">Projects</h2>
+<section id="projects" class="project-section">
 
-  <div class="projects-wrapper">
-    <button class="scroll-btn left-btn">◀</button>
+  <h2 class="project-title">Projects</h2>
 
-    <div class="projects-container">
+  <div class="slider-container">
+
+    <button class="slide-btn left-btn">❮</button>
+
+    <div class="project-slider">
+
+      <!-- CARD 1 -->
       <div class="project-card">
-        <h4>Brain Tumor Detection</h4>
-        <p>DL model detecting tumors from CT/MRI with 90% accuracy.</p>
+        <h3>Zepto Sales Analysis</h3>
+        <p>Sales & delivery analytics with insights.</p>
       </div>
 
+      <!-- CARD 2 -->
       <div class="project-card">
-        <h4>Lane Detection (YOLOv8)</h4>
-        <p>Real-time road lane segmentation for EV navigation.</p>
+        <h3>Boiler Efficiency Dashboard</h3>
+        <p>Power BI dashboard for boiler KPIs.</p>
       </div>
 
+      <!-- CARD 3 -->
       <div class="project-card">
-        <h4>Social Media Analysis</h4>
-        <p>FB & Insta engagement analytics dashboards.</p>
+        <h3>Brain Tumor Detection</h3>
+        <p>DL model to detect MRI tumor types.</p>
       </div>
 
+      <!-- CARD 4 -->
       <div class="project-card">
-        <h4>Zepto Sales Analysis</h4>
-        <p>Delivery & sales analytics with actionable insights.</p>
+        <h3>Lane Detection (YOLOv8)</h3>
+        <p>Real-time EV lane segmentation.</p>
       </div>
 
+      <!-- CARD 5 -->
       <div class="project-card">
-        <h4>Boiler Efficiency Dashboard</h4>
-        <p>Power BI dashboard tracking boiler KPIs & efficiency.</p>
+        <h3>Social Media Analytics</h3>
+        <p>FB + IG engagement & growth insights.</p>
       </div>
+
     </div>
 
-    <button class="scroll-btn right-btn">▶</button>
+    <button class="slide-btn right-btn">❯</button>
+
   </div>
+
 </section>
+
 
 
  
@@ -751,23 +763,23 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.download = "Viswanadha_Resume.pdf";
   link.click();
 };
-const leftBtn = document.querySelector('.left-btn');
-const rightBtn = document.querySelector('.right-btn');
-const container = document.querySelector('.projects-container');
+<script>
+  const slider = document.querySelector(".project-slider");
+  document.querySelector(".left-btn").onclick = () => {
+    slider.scrollBy({ left: -250, behavior: "smooth" });
+  };
+  document.querySelector(".right-btn").onclick = () => {
+    slider.scrollBy({ left: 250, behavior: "smooth" });
+  };
+</script>
 
-leftBtn.addEventListener('click', () => {
-  container.scrollBy({ left: -240, behavior: 'smooth' });
-});
-
-rightBtn.addEventListener('click', () => {
-  container.scrollBy({ left: 240, behavior: 'smooth' });
-});
 
 
 
 
 </body>
 </html>
+
 
 
 
