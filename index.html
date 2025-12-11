@@ -761,6 +761,44 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.click();
 };
 
+// Horizontal scroll for Projects container
+const projectContainer = document.querySelector(".projects-container");
+
+// Mouse wheel horizontal scroll
+projectContainer.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  projectContainer.scrollLeft += e.deltaY;
+});
+
+// Click + Drag scroll
+let isDown = false;
+let startX;
+let scrollLeft;
+
+projectContainer.addEventListener("mousedown", (e) => {
+  isDown = true;
+  projectContainer.classList.add("active");
+  startX = e.pageX - projectContainer.offsetLeft;
+  scrollLeft = projectContainer.scrollLeft;
+});
+
+projectContainer.addEventListener("mouseleave", () => {
+  isDown = false;
+  projectContainer.classList.remove("active");
+});
+
+projectContainer.addEventListener("mouseup", () => {
+  isDown = false;
+  projectContainer.classList.remove("active");
+});
+
+projectContainer.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - projectContainer.offsetLeft;
+  const walk = (x - startX) * 2; // scroll speed
+  projectContainer.scrollLeft = scrollLeft - walk;
+});
 
 
 
@@ -768,6 +806,7 @@ document.getElementById("downloadResumeBtn").onclick = function () {
 
 </body>
 </html>
+
 
 
 
