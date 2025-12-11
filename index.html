@@ -7,30 +7,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- MOBILE NAVBAR -->
+ <!-- ================= MOBILE NAVBAR ================= -->
 <div class="mobile-navbar">
-  <div class="language-menu" id="language-menu">
-  <button data-lang="en">English</button>
-  <button data-lang="te">Telugu</button>
-  <button data-lang="hi">Hindi</button>
-  <button data-lang="ta">German</button>
-     <button data-lang="ta">French</button>
-</div>
-</div>
-
+  
+  <!-- LEFT SIDE (HOME) -->
   <div class="mobile-left">
     <a href="index.html" class="mobile-home">Home</a>
   </div>
+
+  <!-- RIGHT ICONS -->
   <div class="mobile-icons">
-    <span class="m-icon">🔍</span> 
+    <span class="m-icon">🔍</span>
     <span class="divider"></span>
+
     <span class="m-icon" id="language-btn">🌐</span>
     <span class="divider"></span>
+
     <a href="mailto:viswanadhp150@gmail.com" class="m-icon">✉</a>
     <span class="divider"></span>
+
     <span class="m-icon menu-btn">☰</span>
   </div>
-<!-- MOBILE MENU -->
+</div>
+
+<!-- LANGUAGE MENU POPUP -->
+<div class="language-menu" id="language-menu">
+    <button data-lang="en">English</button>
+    <button data-lang="te">Telugu</button>
+    <button data-lang="hi">Hindi</button>
+    <button data-lang="de">German</button>
+    <button data-lang="fr">French</button>
+</div>
+
+<!-- MOBILE DROPDOWN MENU -->
 <div class="mobile-menu" style="display:none;">
   <button class="m-menu-item" data-section="home">Home</button>
   <button class="m-menu-item" data-section="about">About</button>
@@ -38,18 +47,23 @@
   <button class="m-menu-item" data-section="projects">Projects</button>
   <button class="m-menu-item" data-section="contact">Contact</button>
 </div>
+
+
+<!-- ================= DESKTOP NAVBAR ================= -->
 <div class="navbar">
     <div class="navbar-left">
       <h1>Pasupula Viswanadha</h1>
     </div>
+
     <div class="navbar-right">
       <a href="index.html" class="navbar-home">Home</a>
       <button class="nav-btn" data-section="about">About</button>
       <button class="nav-btn" data-section="Internships">Internships</button>
-      <button class="nav-btn" data-section="projects">projects</button>
+      <button class="nav-btn" data-section="projects">Projects</button>
       <button class="nav-btn" data-section="contact">Contact</button>
     </div>
-  </div>
+</div>
+
   <section id="home" class="page-section">
     <div class="photo-container">
       <img src="https://res.cloudinary.com/dhym83o6r/image/upload/v1762686500/WhatsApp_Image_2025-11-09_at_15.19.16_58679454_fn1pzy.jpg"
@@ -585,6 +599,7 @@ document.getElementById("downloadResumeBtn").onclick = function () {
 
 </body>
 </html>
+
 
 
 
