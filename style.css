@@ -816,6 +816,28 @@ button, a {
   color: #1E63FF;
   padding-left: 14px;
 }
+.submister {
+  font-size: 1.9rem;
+  color: #2a4d37;                       /* same dark green used in your theme */
+  font-weight: bold;
+  text-align: center;                    /* center text */
+  margin: 40px 0 20px;
+  position: relative;
+  display: inline-block;                 /* allows centered underline */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submister::after {
+  content: "";
+  width: 120px;                          /* underline width */
+  height: 4px;                           /* underline thickness */
+  background-color: rgb(148, 192, 148);  /* SAME green as navbar border & cards */
+  display: block;
+  margin: 8px auto 0;                    /* centers underline */
+  border-radius: 3px;
+}
+
 
 
 
