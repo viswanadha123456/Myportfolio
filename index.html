@@ -122,8 +122,6 @@ I work across the full data lifecycle — from cleaning and structuring complex 
   </div>
 </div>
 <div class="exp-container">
-<button id="scroll-left"><</button>
-<button id="scroll-right">></button>
   <div class="exp-box">
     <h4>Brain Tumor Detection (Deep Learning)</h4>
     <p class="company">AI-Based Medical Imaging Project</p>
@@ -762,31 +760,7 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.click();
 };
 
-// Horizontal scroll container
-const projectContainer = document.querySelector(".projects-container");
 
-// Buttons
-const btnLeft = document.getElementById("scroll-left");
-const btnRight = document.getElementById("scroll-right");
-
-// Scroll amount (you can change)
-const scrollAmount = 300;
-
-// Scroll Right
-btnRight.addEventListener("click", () => {
-  projectContainer.scrollBy({
-    left: scrollAmount,
-    behavior: "smooth"
-  });
-});
-
-// Scroll Left
-btnLeft.addEventListener("click", () => {
-  projectContainer.scrollBy({
-    left: -scrollAmount,
-    behavior: "smooth"
-  });
-});
 
 
 
@@ -795,6 +769,7 @@ btnLeft.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
