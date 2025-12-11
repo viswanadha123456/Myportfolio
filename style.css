@@ -808,6 +808,61 @@ button, a {
   }
 }
 
+/* Container visible only on mobile */
+.exp-container {
+  display: none; /* Hide by default on desktop */
+}
+
+/* Show container only on mobile */
+@media (max-width: 600px) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  /* Box Style */
+  .exp-box {
+    background: linear-gradient(to bottom right, #f9fbff, #eef3ff);
+    border-radius: 20px;
+    padding: 20px 24px;
+    border: 1px solid #dce6ff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+  }
+
+  /* Hover Effect (optional on mobile) */
+  .exp-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Title */
+  .exp-box h4 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    color: #2b3a67;
+  }
+
+  /* Company */
+  .company {
+    font-size: 13px;
+    color: #5a6a85;
+    margin: 6px 0 8px 0;
+  }
+
+  /* Description */
+  .desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #38475a;
+  }
+}
+
 
 
 
