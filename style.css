@@ -135,10 +135,65 @@ body {
 }
 
 .contact-links {
-  margin-top: 30px;           /* space above contact links */
+  margin-top: 20px;         /* space above */
   display: flex;
-  flex-direction: column;     /* stack vertically */
-  gap: 12px;                  /* space between each link/item */
+  flex-direction: column;   /* one below another */
+  gap: 2px;                 /* space between rows */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;       /* same space before text */
+}
+
+.contact-item:hover {
+  color: #0078d7;
+}
+
+.contact-item:hover .icon {
+  filter: brightness(0.8);
+}
+
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;   /* makes every text start at same position */
+}
+
+.contact-item:hover {
+  color: #0078d7;
+}
+
+.contact-item:hover .icon {
+  filter: brightness(0.8);
+}
+        /* space between each link/item */
 }
 
 .contact-item {
@@ -163,7 +218,6 @@ body {
 .contact-item:hover .icon {
   filter: brightness(0.8);
 }
-
 /* Section Title */
 /* Centered Section Title (like Education) */
 .section-title {
@@ -803,6 +857,7 @@ button, a {
   color: #1E63FF;
   padding-left: 14px;
 }
+
 
 
 
