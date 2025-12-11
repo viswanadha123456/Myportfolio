@@ -141,28 +141,7 @@ body {
   gap: 2px;                 /* space between rows */
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-item .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;       /* same space before text */
-}
-
-.contact-item:hover {
-  color: #0078d7;
-}
-
-.contact-item:hover .icon {
-  filter: brightness(0.8);
-}
-
+/* CONTACT LINKS WRAPPER */
 .contact-links {
   margin-top: 20px;
   display: flex;
@@ -170,22 +149,26 @@ body {
   gap: 8px;
 }
 
+/* EACH CONTACT ITEM */
 .contact-item {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #333;
   font-size: 1rem;
+  color: #333;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
+/* ICON */
 .contact-item .icon {
   width: 24px;
   height: 24px;
-  margin-right: 10px;   /* makes every text start at same position */
+  margin-right: 10px;  /* equal alignment */
+  filter: none;
 }
 
+/* HOVER EFFECT */
 .contact-item:hover {
   color: #0078d7;
 }
@@ -193,31 +176,7 @@ body {
 .contact-item:hover .icon {
   filter: brightness(0.8);
 }
-        /* space between each link/item */
-}
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-item .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  filter: none;               /* you can apply grayscale or colour if you want */
-}
-
-.contact-item:hover {
-  color: #0078d7;            /* nicer hover color */
-}
-
-.contact-item:hover .icon {
-  filter: brightness(0.8);
-}
 /* Section Title */
 /* Centered Section Title (like Education) */
 .section-title {
@@ -857,6 +816,7 @@ button, a {
   color: #1E63FF;
   padding-left: 14px;
 }
+
 
 
 
