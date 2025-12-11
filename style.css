@@ -863,58 +863,6 @@ button, a {
   }
 }
 
-/* Hidden by default: only show on mobile */
-.projects-mobile {
-  display: none;
-}
-
-/* Hide on desktop */
-.projects-box-container {
-  display: none;
-}
-
-/* Show ONLY on mobile */
-@media(max-width: 600px) {
-  .projects-box-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 30px auto;
-    gap: 20px;
-    padding: 0 15px;
-  }
-
-  .proj-card {
-    background: linear-gradient(to bottom right, #f9fbff, #eef3ff);
-    border-radius: 20px;
-    padding: 20px 24px;
-    border: 1px solid #dce6ff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-    transition: 0.3s;
-  }
-
-  .proj-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  }
-
-  .proj-card h4 {
-    font-size: 18px;
-    margin: 0;
-    font-weight: 700;
-    color: #2b3a67;
-  }
-
-  .proj-text {
-    font-size: 14px;
-    color: #38475a;
-    margin-top: 8px;
-    line-height: 1.5;
-  }
-}
-
-
-
 
 
 
