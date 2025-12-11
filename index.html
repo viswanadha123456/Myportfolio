@@ -122,7 +122,8 @@ I work across the full data lifecycle — from cleaning and structuring complex 
   </div>
 </div>
 <div class="exp-container">
-
+<button id="scroll-left"><</button>
+<button id="scroll-right">></button>
   <div class="exp-box">
     <h4>Brain Tumor Detection (Deep Learning)</h4>
     <p class="company">AI-Based Medical Imaging Project</p>
@@ -761,44 +762,32 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.click();
 };
 
-// Horizontal scroll for Projects container
+// Horizontal scroll container
 const projectContainer = document.querySelector(".projects-container");
 
-// Mouse wheel horizontal scroll
-projectContainer.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  projectContainer.scrollLeft += e.deltaY;
+// Buttons
+const btnLeft = document.getElementById("scroll-left");
+const btnRight = document.getElementById("scroll-right");
+
+// Scroll amount (you can change)
+const scrollAmount = 300;
+
+// Scroll Right
+btnRight.addEventListener("click", () => {
+  projectContainer.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth"
+  });
 });
 
-// Click + Drag scroll
-let isDown = false;
-let startX;
-let scrollLeft;
-
-projectContainer.addEventListener("mousedown", (e) => {
-  isDown = true;
-  projectContainer.classList.add("active");
-  startX = e.pageX - projectContainer.offsetLeft;
-  scrollLeft = projectContainer.scrollLeft;
+// Scroll Left
+btnLeft.addEventListener("click", () => {
+  projectContainer.scrollBy({
+    left: -scrollAmount,
+    behavior: "smooth"
+  });
 });
 
-projectContainer.addEventListener("mouseleave", () => {
-  isDown = false;
-  projectContainer.classList.remove("active");
-});
-
-projectContainer.addEventListener("mouseup", () => {
-  isDown = false;
-  projectContainer.classList.remove("active");
-});
-
-projectContainer.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - projectContainer.offsetLeft;
-  const walk = (x - startX) * 2; // scroll speed
-  projectContainer.scrollLeft = scrollLeft - walk;
-});
 
 
 
@@ -806,6 +795,7 @@ projectContainer.addEventListener("mousemove", (e) => {
 
 </body>
 </html>
+
 
 
 
