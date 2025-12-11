@@ -751,12 +751,24 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.download = "Viswanadha_Resume.pdf";
   link.click();
 };
+const leftBtn = document.querySelector('.left-btn');
+const rightBtn = document.querySelector('.right-btn');
+const container = document.querySelector('.projects-container');
+
+leftBtn.addEventListener('click', () => {
+  container.scrollBy({ left: -240, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  container.scrollBy({ left: 240, behavior: 'smooth' });
+});
 
 
 
 
 </body>
 </html>
+
 
 
 
