@@ -768,17 +768,19 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.download = "Viswanadha_Resume.pdf";
   link.click();
 };
-<script>
 let projIndex = 0;
 const projSlides = document.getElementById("projectSlides");
+
 function moveProjectSlide(dir) {
- const total = projSlides.children.length;
- projIndex += dir;
- if (projIndex < 0) projIndex = total - 1;
- if (projIndex >= total) projIndex = 0;
- projSlides.style.transform = `translateX(-${projIndex * 100}%)`;  <!-- FIXED -->
+  const total = projSlides.children.length;
+  projIndex += dir;
+
+  if (projIndex < 0) projIndex = total - 1;
+  if (projIndex >= total) projIndex = 0;
+
+  projSlides.style.transform = `translateX(-${projIndex * 100}%)`;
 }
-</script>
+
 
 
 
@@ -790,6 +792,7 @@ function moveProjectSlide(dir) {
 
 </body>
 </html>
+
 
 
 
