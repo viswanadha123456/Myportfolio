@@ -919,33 +919,33 @@ button, a {
 }
 
 .project-slider {
-  width: 80vw;     /* Full viewport width */
+  width: 100vw;           /* Full screen */
   overflow: hidden;
-  position: flex;
+  position: relative;
+  margin: auto;
 }
 
 .slider-wrapper {
   display: flex;
-  width: 80%;       
   transition: transform 0.5s ease;
 }
 
 .project-slide {
-  min-width: 80vw;  /* Fix for mobile */
-  height: 620px;
+  min-width: 100vw;       /* Each slide takes full screen */
+  height: 450px;          /* Good size preview */
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex;
+  align-items: flex-end;
   justify-content: center;
   padding-bottom: 30px;
 }
 
-
 .project-content {
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   padding: 15px;
   width: 80%;
+  max-width: 600px;
   border-radius: 12px;
   color: #fff;
 }
@@ -958,30 +958,32 @@ button, a {
   margin: 5px 0;
 }
 
+/* Arrows */
 .proj-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 14px;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.7);
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
 }
 
 .proj-arrow.left {
-  left: 10px;
+  left: 15px;
 }
 
 .proj-arrow.right {
-  right: 10px;
+  right: 15px;
 }
 
+/* Mobile Responsive */
 @media (max-width: 600px) {
-  .project-slide { height: 620px; }
-  .project-content { width: 60%; font-size: 14px; }
+  .project-slide { height: 380px; }
+  .project-content { width: 90%; font-size: 14px; }
   .proj-arrow { font-size: 22px; padding: 10px; }
 }
 
