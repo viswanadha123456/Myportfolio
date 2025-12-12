@@ -974,9 +974,9 @@ button, a {
 .proj-arrow.right { right: 5px; }
 
 /* Mobile adjustments */
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .project-slider {
-    height: 600px;
+    height: 800px;
   }
   .project-content {
     font-size: 12px;
@@ -987,6 +987,7 @@ button, a {
     font-size: 16px;
   }
 }
+
 
 
 
