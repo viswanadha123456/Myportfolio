@@ -921,9 +921,9 @@ button, a {
 /* Base Slider Styles - Desktop & Mobile */
 .project-slider {
   width: 100%;
-  max-width: 800px;      /* desktop max width */
-  margin: 0 auto;        /* center slider */
-  height: 350px;         /* desktop height */
+  max-width: 800px;       /* desktop width */
+  margin: 0 auto;         /* center slider */
+  height: 350px;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
@@ -931,13 +931,13 @@ button, a {
 }
 
 .slider-wrapper {
-  display: flex;         /* horizontal slides */
-  transition: transform 0.4s ease;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;             /* important for translateX to work */
 }
 
 .project-slide {
-  flex-shrink: 0;
-  width: 100%;           /* each slide full width */
+  min-width: 100%;         /* one slide fully visible */
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -951,47 +951,45 @@ button, a {
 .project-content {
   background: rgba(0,0,0,0.5);
   padding: 12px;
-  width: 80%;            /* content box width */
+  width: 80%;
   color: white;
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
 }
 
-/* Arrows */
 .proj-arrow {
   position: absolute;
-  top: 50%;              /* vertically center */
+  top: 50%;               /* vertical center */
   transform: translateY(-50%);
   padding: 10px;
   background: rgba(0,0,0,0.6);
   color: #fff;
   border-radius: 50%;
   font-size: 20px;
-  z-index: 10;
   cursor: pointer;
+  z-index: 10;
 }
 
 .proj-arrow.left { left: 10px; }
 .proj-arrow.right { right: 10px; }
 
-/* Mobile Adjustments */
+/* Mobile */
 @media (max-width: 600px) {
   .project-slider {
-    max-width: 100%;    /* full mobile width */
-    height: 250px;      /* mobile height */
+    height: 250px;
+    max-width: 100%;
   }
-
   .project-content {
-    width: 90%;         /* bigger content box on mobile */
+    width: 90%;
     font-size: 12px;
   }
-
   .proj-arrow {
     padding: 8px;
     font-size: 18px;
   }
 }
+
 
 
 
