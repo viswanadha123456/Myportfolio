@@ -919,20 +919,20 @@ button, a {
 }
 
 .project-slider {
-  width: 100vw;     /* Full viewport width */
+  width: 80vw;     /* Full viewport width */
   overflow: hidden;
   position: relative;
 }
 
 .slider-wrapper {
   display: flex;
-  width: 100%;       
+  width: 80%;       
   transition: transform 0.5s ease;
 }
 
 .project-slide {
-  min-width: 100vw;  /* Fix for mobile */
-  height: 420px;
+  min-width: 80vw;  /* Fix for mobile */
+  height: 620px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -980,10 +980,11 @@ button, a {
 }
 
 @media (max-width: 600px) {
-  .project-slide { height: 520px; }
+  .project-slide { height: 620px; }
   .project-content { width: 60%; font-size: 14px; }
   .proj-arrow { font-size: 22px; padding: 10px; }
 }
+
 
 
 
