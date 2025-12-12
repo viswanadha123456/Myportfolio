@@ -920,9 +920,9 @@ button, a {
 
 .project-slider {
   width: 100%;
-  max-width: 680px; /* perfect for mobile navbar */
+  max-width: 480px; /* perfect for mobile navbar */
   margin: 0 auto;   /* center slider */
-  height: 400px;    /* adjust for mobile */
+  height: 200px;    /* adjust for mobile */
   overflow: hidden;
   position: relative;
   border-radius: 15px;
@@ -937,7 +937,7 @@ button, a {
 .project-slide {
   flex-shrink: 0;
   width: 80%;
-  height: 400%;
+  height: 200%;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -950,7 +950,7 @@ button, a {
 .project-content {
   background: rgba(0,0,0,0.5);
   padding: 10px;
-  width: 90%;
+  width: 50%;
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -980,13 +980,14 @@ button, a {
   }
   .project-content {
     font-size: 12px;
-    width: 95%;
+    width: 55%;
   }
   .proj-arrow {
     padding: 6px;
     font-size: 16px;
   }
 }
+
 
 
 
