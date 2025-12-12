@@ -918,6 +918,65 @@ button, a {
   }
 }
 
+.project-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.project-slide {
+  min-width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-content {
+  background: rgba(0,0,0,0.55);
+  padding: 15px;
+  width: 80%;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.project-content h3 {
+  margin: 5px 0;
+}
+
+.project-content p {
+  margin: 5px 0;
+}
+
+.proj-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.proj-arrow.left {
+  left: 10px;
+}
+
+.proj-arrow.right {
+  right: 10px;
+}
+
 
 
 
