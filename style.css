@@ -918,11 +918,12 @@ button, a {
   }
 }
 
+/* Base Slider Styles - Desktop & Mobile */
 .project-slider {
   width: 100%;
-  max-width: 480px; /* perfect for mobile navbar */
-  margin: 0 auto;   /* center slider */
-  height: 200px;    /* adjust for mobile */
+  max-width: 800px;      /* desktop max width */
+  margin: 0 auto;        /* center slider */
+  height: 350px;         /* desktop height */
   overflow: hidden;
   position: relative;
   border-radius: 15px;
@@ -930,63 +931,68 @@ button, a {
 }
 
 .slider-wrapper {
-  display: flex;
+  display: flex;         /* horizontal slides */
   transition: transform 0.4s ease;
 }
 
 .project-slide {
   flex-shrink: 0;
-  width: 80%;
-  height: 200%;
+  width: 100%;           /* each slide full width */
+  height: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .project-content {
   background: rgba(0,0,0,0.5);
-  padding: 10px;
-  width: 50%;
+  padding: 12px;
+  width: 80%;            /* content box width */
   color: white;
   border-radius: 10px;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
 }
 
+/* Arrows */
 .proj-arrow {
   position: absolute;
-  top: 50%;
+  top: 50%;              /* vertically center */
   transform: translateY(-50%);
-  padding: 8px;
+  padding: 10px;
   background: rgba(0,0,0,0.6);
   color: #fff;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 20px;
   z-index: 10;
   cursor: pointer;
 }
 
-.proj-arrow.left { left: 5px; }
-.proj-arrow.right { right: 5px; }
+.proj-arrow.left { left: 10px; }
+.proj-arrow.right { right: 10px; }
 
-/* Mobile adjustments */
+/* Mobile Adjustments */
 @media (max-width: 600px) {
   .project-slider {
-    height: 500px;
+    max-width: 100%;    /* full mobile width */
+    height: 250px;      /* mobile height */
   }
+
   .project-content {
+    width: 90%;         /* bigger content box on mobile */
     font-size: 12px;
-    width: 55%;
   }
+
   .proj-arrow {
-    padding: 6px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 18px;
   }
 }
+
 
 
 
