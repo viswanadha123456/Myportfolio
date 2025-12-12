@@ -919,20 +919,22 @@ button, a {
 }
 
 .project-slider {
-  width: 100vw;           /* Full screen */
+  width: 100vw;
+  height: 450px;
   overflow: hidden;
   position: relative;
-  margin: auto;
+  background: #e9eef5;
 }
 
 .slider-wrapper {
   display: flex;
+  height: 100%;
   transition: transform 0.5s ease;
 }
 
 .project-slide {
-  min-width: 100vw;       /* Each slide takes full screen */
-  height: 450px;          /* Good size preview */
+  min-width: 100vw;
+  height: 100%;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -942,20 +944,12 @@ button, a {
 }
 
 .project-content {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.55);
   padding: 15px;
   width: 80%;
-  max-width: 600px;
+  max-width: 400px;
   border-radius: 12px;
   color: #fff;
-}
-
-.project-content h3 {
-  margin: 5px 0;
-}
-
-.project-content p {
-  margin: 5px 0;
 }
 
 /* Arrows */
@@ -966,27 +960,14 @@ button, a {
   padding: 14px;
   background: rgba(0,0,0,0.7);
   color: white;
-  font-size: 30px;
+  font-size: 28px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
 }
 
-.proj-arrow.left {
-  left: 15px;
-}
-
-.proj-arrow.right {
-  right: 15px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .project-slide { height: 380px; }
-  .project-content { width: 90%; font-size: 14px; }
-  .proj-arrow { font-size: 22px; padding: 10px; }
-}
-
+.proj-arrow.left { left: 10px; }
+.proj-arrow.right { right: 10px; }
 
 
 
