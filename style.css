@@ -929,11 +929,16 @@ button, a {
     background: #f0f4ff;
   }
 
-  .slider-wrapper {
-    display: flex;
-    height: 100%;
-    transition: transform 0.4s ease;
-  }
+ .slider-wrapper {
+  display: flex;          /* ensures slides are in a row */
+  transition: transform 0.4s ease;
+  width: 100%;            /* optional, but ensures wrapper takes full space */
+}
+.project-slide {
+  flex-shrink: 0;         /* prevents slides from shrinking */
+  width: 100%;            /* each slide takes full width */
+}
+
 
   .project-slide {
     width: 100%;      /* MUST MATCH JavaScript */
@@ -973,6 +978,7 @@ button, a {
   .proj-arrow.left { left: 10px; }
   .proj-arrow.right { right: 10px; }
 }
+
 
 
 
