@@ -919,10 +919,10 @@ button, a {
 }
 
 .project-slider {
-  width: 80%;
+  width: 100%;
   max-width: 480px; /* perfect for mobile navbar */
   margin: 0 auto;   /* center slider */
-  height: 500px;    /* adjust for mobile */
+  height: 400px;    /* adjust for mobile */
   overflow: hidden;
   position: relative;
   border-radius: 15px;
@@ -937,7 +937,7 @@ button, a {
 .project-slide {
   flex-shrink: 0;
   width: 80%;
-  height: 500%;
+  height: 400%;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -987,6 +987,7 @@ button, a {
     font-size: 16px;
   }
 }
+
 
 
 
