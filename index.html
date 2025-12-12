@@ -121,52 +121,63 @@ I work across the full data lifecycle — from cleaning and structuring complex 
     </p>
   </div>
 </div>
-<div class="exp-container">
-  <div class="exp-box">
-    <h4>Brain Tumor Detection (Deep Learning)</h4>
-    <p class="company">AI-Based Medical Imaging Project</p>
-    <p class="desc">
-      Built a deep learning model to detect brain tumors using MRI scans
-      with high accuracy and visual explanations using Grad-CAM.
-    </p>
+<section class="project-slider">
+
+  <div class="slider-wrapper" id="projectSlides">
+
+    <!-- Slide 1 -->
+    <div class="project-slide" style="background-image: url('boiler.jpg');">
+      <div class="project-content">
+        <h3>Boiler Efficiency Monitoring</h3>
+        <p class="company">Industrial Data Analytics</p>
+        <p>Designed Power BI dashboard to track boiler efficiency and fuel usage.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="project-slide" style="background-image: url('lane.jpg');">
+      <div class="project-content">
+        <h3>Smart Road Lane Detection (YOLOv8)</h3>
+        <p class="company">Computer Vision for EV Navigation</p>
+        <p>Real-time lane detection using YOLOv8 segmentation model.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="project-slide" style="background-image: url('tumor.jpg');">
+      <div class="project-content">
+        <h3>Brain Tumor Detection</h3>
+        <p class="company">AI-Based Medical Imaging</p>
+        <p>Deep learning model using MRI scans with Grad-CAM explanation.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="project-slide" style="background-image: url('social.jpg');">
+      <div class="project-content">
+        <h3>Social Media Engagement Analysis</h3>
+        <p class="company">Instagram + Facebook Analytics</p>
+        <p>Analyzed 50,000+ records to find engagement trends.</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="project-slide" style="background-image: url('zepto.jpg');">
+      <div class="project-content">
+        <h3>Zepto Sales Dashboard</h3>
+        <p class="company">Business Analytics</p>
+        <p>Built dashboards for order trends & SKU performance.</p>
+      </div>
+    </div>
+
   </div>
 
-  <div class="exp-box">
-    <h4>Smart Road Lane Detection (YOLOv8)</h4>
-    <p class="company">Computer Vision for EV Navigation</p>
-    <p class="desc">
-      Implemented real-time lane detection system using YOLOv8 segmentation,
-      achieving stable performance in low-light & rainy conditions.
-    </p>
-  </div>
+  <!-- Arrows -->
+  <div class="proj-arrow left" onclick="moveProjectSlide(-1)">&#10094;</div>
+  <div class="proj-arrow right" onclick="moveProjectSlide(1)">&#10095;</div>
 
-  <div class="exp-box">
-    <h4>Social Media Engagement Analysis</h4>
-    <p class="company">Instagram + Facebook Analytics</p>
-    <p class="desc">
-      Analyzed 50,000+ records using SQL, Python & Power BI to identify
-      engagement trends and top-performing content categories.
-    </p>
-  </div>
+</section>
 
-  <div class="exp-box">
-    <h4>Zepto Sales & Delivery Dashboard</h4>
-    <p class="company">Business Analytics Project</p>
-    <p class="desc">
-      Built interactive dashboards showing order trends, delivery speed,
-      top SKUs, and store-wise performance insights.
-    </p>
-  </div>
-
-  <div class="exp-box">
-    <h4>Boiler Efficiency Monitoring</h4>
-    <p class="company">Industrial Data Analytics</p>
-    <p class="desc">
-      Designed Power BI dashboard to track boiler fuel usage, steam output,
-      and efficiency KPIs for real-time decision making.
-    </p>
-  </div>
-</div>
 </section>
   <section id="about" class="page-section" style="display:none;">
   <h2 class="section-title">Education</h2>
@@ -757,6 +768,21 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   link.download = "Viswanadha_Resume.pdf";
   link.click();
 };
+<script>
+let projIndex = 0;
+const projSlides = document.getElementById("projectSlides");
+
+function moveProjectSlide(dir) {
+  const total = projSlides.children.length;
+
+  projIndex += dir;
+
+  if (projIndex < 0) projIndex = total - 1;
+  if (projIndex >= total) projIndex = 0;
+
+  projSlides.style.transform = `translateX(-${projIndex * 100}%)`;
+}
+</script>
 
 
 
@@ -767,6 +793,7 @@ document.getElementById("downloadResumeBtn").onclick = function () {
 
 </body>
 </html>
+
 
 
 
