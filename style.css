@@ -921,7 +921,7 @@ button, a {
 .project-slider {
   width: 80vw;     /* Full viewport width */
   overflow: hidden;
-  position: relative;
+  position: flex;
 }
 
 .slider-wrapper {
@@ -936,7 +936,7 @@ button, a {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end;
+  align-items: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
@@ -984,6 +984,7 @@ button, a {
   .project-content { width: 60%; font-size: 14px; }
   .proj-arrow { font-size: 22px; padding: 10px; }
 }
+
 
 
 
