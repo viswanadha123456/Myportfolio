@@ -990,6 +990,109 @@ button, a {
   }
 }
 
+/* Contact Section Title */
+.contact-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #2a4d37;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 4px solid rgb(148, 192, 148);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Main contact container */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual contact cards */
+.contact-card {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border-left: 6px solid rgb(148, 192, 148);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;  /* fixed transition to match other cards */
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.contact-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e3d29;
+}
+
+.contact-card p {
+  margin: 3px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Icons */
+.c-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Make all content fit mobile screens */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Images should not overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text and container spacing */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Buttons and links */
+button, a {
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+/* Mobile responsive rules */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    /* If you used flexbox */
+    .flex {
+        flex-direction: column;
+    }
+}
 
 
 
