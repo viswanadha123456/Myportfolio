@@ -990,66 +990,6 @@ button, a {
   }
 }
 
-/* Hide on desktop */
-#mobile-contact {
-  display: none;
-}
-
-/* Mobile only */
-@media (max-width: 600px) {
-
-  #mobile-contact {
-    display: block;
-    padding: 20px;
-    background: #f6faf7;
-    font-family: Arial, sans-serif;
-  }
-
-  #mobile-contact h2 {
-    text-align: center;
-    font-size: 22px;
-    color: #2a4d37;
-    margin-bottom: 20px;
-    border-bottom: 3px solid rgb(148, 192, 148);
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-
-  .contact-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact-box a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #ffffff;
-    padding: 14px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #333;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  }
-
-  .contact-box img {
-    width: 38px;
-    height: 38px;
-  }
-
-  .contact-box h4 {
-    margin: 0;
-    font-size: 16px;
-    color: #1e3d29;
-  }
-
-  .contact-box p {
-    margin: 2px 0 0;
-    font-size: 13px;
-    color: #555;
-  }
-}
 
 
 
