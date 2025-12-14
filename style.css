@@ -1150,13 +1150,19 @@ button, a {
     height: 24px;
   }
 }
+@media (max-width: 600px) {
 
-/* FIX text alignment inside contact cards */
-.contact-card > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* FIX text alignment inside contact cards */
+  .contact-card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* KEY FIX */
+    text-align: left;        /* KEY FIX */
+  }
+
 }
+
 
 
 
