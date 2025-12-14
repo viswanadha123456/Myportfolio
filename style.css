@@ -1273,6 +1273,37 @@ button, a {
   }
 }
 
+/* ===== FIX PROJECT SLIDER POSITION ===== */
+
+/* Make sure slider is in normal document flow */
+.project-slider {
+  position: relative !important;
+  width: 100%;
+  margin-top: 60px;   /* pushes it downward */
+  clear: both;
+}
+
+/* Prevent overlap with hero/about section */
+.project-slider,
+.project-slider * {
+  box-sizing: border-box;
+}
+
+/* If slider wrapper was absolute earlier */
+.slider-wrapper {
+  position: relative !important;
+}
+
+/* Desktop & Laptop */
+@media (min-width: 992px) {
+  .project-slider {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+}
+
+
 
 
 
