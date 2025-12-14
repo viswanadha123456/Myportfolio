@@ -1275,50 +1275,46 @@ button, a {
 
 /* ===== FIX PROJECT SLIDER POSITION ===== */
 
-/* ===============================
-   FORCE PROJECT SLIDER TO DOWN
-   =============================== */
-
-/* Parent section fix (important) */
-body {
-  display: block;
-}
-
-/* Force slider to start on a new row */
+/* 1️⃣ Force the parent of project-slider to column */
 .project-slider {
-  width: 100% !important;
-  display: block !important;
-  position: static !important;
-  float: none !important;
-  clear: both !important;
-  margin-top: 80px;
+    position: relative !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-top: 50px !important;
+    display: block !important;
 }
 
-/* Remove any flex/grid behavior pushing it right */
-.project-slider,
+/* 2️⃣ Force parent containers to stack vertically */
+section, 
+.main-content, 
+.hero-section, 
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+/* 3️⃣ Slider wrapper adjustments */
 .slider-wrapper {
-  flex: none !important;
-  grid-column: 1 / -1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    position: relative !important;
 }
 
-/* Desktop & Laptop only */
+/* 4️⃣ Slide adjustments (optional, center content) */
+.project-slide {
+    margin: 0 auto !important;
+}
+
+/* 5️⃣ Media queries for desktop */
 @media (min-width: 992px) {
-  .project-slider {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+    .project-slider {
+        margin-top: 60px !important;
+    }
 }
-/* Force parent container to column layout */
-section,
-.main-content,
-.container,
-.hero-section {
-  flex-direction: column !important;
-}
-
-
-
-
 
 
 
