@@ -990,6 +990,8 @@ button, a {
   }
 }
 
+
+
 /* =========================================================
    HIDE EVERYTHING BY DEFAULT (DESKTOP)
    ========================================================= */
@@ -1002,253 +1004,165 @@ button, a {
   display: none;
 }
 
-.contact-title {
-  text-align: center;
-  font-size: 2.3rem;
-  color: #2a4d37;
-  font-weight: bold;
-  margin-bottom: 30px;
-  border-bottom: 4px solid rgb(148, 192, 148);
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Main contact container */
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-/* Individual contact cards */
-.contact-card {
-  background: #ffffff;
-  padding: 20px 25px;
-  border-radius: 12px;
-  border-left: 6px solid rgb(148, 192, 148);
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;  /* fixed transition to match other cards */
-}
-
-.contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
-}
-
-.contact-card h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #1e3d29;
-}
-
-.contact-card p {
-  margin: 3px 0 0;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Icons */
-.c-icon {
-  width: 40px;
-  height: 40px;
-}
-
-/* Make all content fit mobile screens */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Images should not overflow */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Text and container spacing */
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-/* Buttons and links */
-button, a {
-    padding: 12px 18px;
-    font-size: 16px;
-}
-
-/* Mobile responsive rules */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 15px;
-    }
-
-    /* If you used flexbox */
-    .flex {
-        flex-direction: column;
-    }
-}
-
 /* =========================================================
-   RESPONSIVE DESIGN FIX FOR ALL SCREENS (MOBILE + TABLET)
+   MOBILE ONLY VIEW (≤600px)
    ========================================================= */
 
-@media (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .navbar-right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .page-section#home {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-    gap: 20px;
-  }
-
-  .home-text {
-    max-width: 100%;
-  }
-
-  .skills-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .skill-block {
-    min-width: 200px;
-  }
-}
 @media (max-width: 600px) {
 
-  h1 { font-size: 20px; }
-  h2 { font-size: 22px; }
-  p  { font-size: 15px; }
-
-  .photo-container {
-    width: 200px;
-    height: 200px;
+  /* Show contact section only on mobile */
+  #contact,
+  .contact-container,
+  .contact-card,
+  .contact-title,
+  .section-title {
+    display: block;
   }
 
-  .navbar-right .nav-btn {
-    font-size: 16px;
+  /* Section title (smaller, clean) */
+  .section-title {
+    font-size: 1.4rem;
+    color: #2a4d37;
+    margin: 20px 0 15px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(148, 192, 148);
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .page-section {
-    padding: 20px 10px;
+  /* Contact title */
+  .contact-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2a4d37;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border-bottom: 3px solid rgb(148, 192, 148);
+    display: inline-block;
+    padding-bottom: 4px;
   }
 
-  .info-card,
-  .edu-card,
-  .contact-card {
-    padding: 18px;
-  }
-
+  /* Contact container */
   .contact-container {
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
+  /* Contact cards (smaller & neat) */
+  .contact-card {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    border-left: 4px solid rgb(148, 192, 148);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  }
+
+  /* Card text */
+  .contact-card h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #1e3d29;
+  }
+
+  .contact-card p {
+    margin: 2px 0 0;
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  /* Icons */
+  .c-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* General mobile text sizing */
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  p  { font-size: 14px; }
+
+  /* Page padding */
+  .page-section {
+    padding: 18px 10px;
+  }
+
+  /* Containers */
+  .container,
   .card-container,
   .education-container {
     width: 95%;
+    margin: auto;
   }
 
-  .skills-container {
-    flex-direction: column;
-    gap: 25px;
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 }
+
+/* =========================================================
+   EXTRA SMALL PHONES (≤400px)
+   ========================================================= */
 
 @media (max-width: 400px) {
 
-  .navbar {
-    padding: 10px;
+  .section-title {
+    font-size: 1.3rem;
   }
 
-  .navbar-left h1 {
-    font-size: 18px;
+  .contact-title {
+    font-size: 1.4rem;
   }
 
-  .navbar-right .nav-btn {
-    font-size: 14px;
-    padding: 6px;
+  .contact-card {
+    padding: 12px;
   }
 
-  .photo-container {
-    width: 160px;
-    height: 160px;
+  .contact-card h4 {
+    font-size: 0.9rem;
   }
 
-  .home-text p {
-    font-size: 14px;
+  .contact-card p {
+    font-size: 0.75rem;
   }
+
+  .c-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
+@media (max-width: 600px) {
 
-/* FIX BOTTOM SKILLS SECTION FOR MOBILE */
-@media (max-width: 768px) {
-
-  .bottom {
-    height: auto !important;    /* allow section to grow */
-    padding: 20px !important;
+  /* FIX text alignment inside contact cards */
+  .contact-card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* KEY FIX */
+    text-align: left;        /* KEY FIX */
   }
 
-  .skills-container {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
-    width: 100% !important;
-  }
-
-  .skill-block {
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  .skill-block h3 {
-    font-size: 18px !important;
-  }
-
-  .skill-block ul li {
-    font-size: 15px !important;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .skills-container {
-    gap: 14px !important;
-  }
-
-  .skill-block h3 {
-    font-size: 16px !important;
-  }
-
-  .skill-block ul li {
-    font-size: 14px !important;
-  }
 }
 
 
