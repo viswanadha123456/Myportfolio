@@ -1201,7 +1201,7 @@ button, a {
     font-size: 18px;
     font-weight: 700;
     color: #2b3a67;
-    margin-bottom: 15px;
+    margin-bottom: 12px; /* slightly smaller */
     text-align: center;
   }
 
@@ -1212,7 +1212,7 @@ button, a {
   }
 
   .mobile-cert-box li {
-    margin-bottom: 12px;
+    margin-bottom: 6px; /* reduced from 12px to 6px */
     font-size: 14px;
   }
 
@@ -1227,6 +1227,7 @@ button, a {
     color: #0d2a66;
   }
 }
+
 
 
 
