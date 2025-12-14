@@ -1302,6 +1302,10 @@ button, a {
     padding: 40px 0;
   }
 }
+section {
+  position: relative;
+}
+
 
 
 
