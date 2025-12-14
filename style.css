@@ -1251,6 +1251,12 @@ button, a {
   }
 }
 
+/* Force company text WHITE only inside slider */
+.project-content .company {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
 
 
 
