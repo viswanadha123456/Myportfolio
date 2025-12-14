@@ -1228,7 +1228,7 @@ button, a {
     color: #0d2a66;
   }
 }
-/* Mobile Contact Icons */
+/* Mobile Contact Icons container */
 .mobile-contact-icons {
   display: flex;
   justify-content: center;
@@ -1237,23 +1237,18 @@ button, a {
   margin: 16px 0;
 }
 
-/* Icon container */
+/* Icon link */
 .m-icon {
-  background: #ffffff;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Icon images */
+/* Icon images – clean & visible */
 .icon-img {
   width: 30px;
   height: 30px;
-  filter: contrast(1.2);
-  transition: transform 0.25s ease;
+  transition: transform 0.2s ease;
 }
 
 /* Hover / tap effect */
@@ -1263,9 +1258,9 @@ button, a {
 
 /* Divider */
 .divider {
-  width: 1.5px;
-  height: 28px;
-  background: rgba(0,0,0,0.25);
+  width: 1px;
+  height: 26px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Hide on desktop */
@@ -1274,6 +1269,7 @@ button, a {
     display: none;
   }
 }
+
 
 
 
