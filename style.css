@@ -1151,6 +1151,13 @@ button, a {
   }
 }
 
+/* FIX text alignment inside contact cards */
+.contact-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 
 
