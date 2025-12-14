@@ -1273,48 +1273,43 @@ button, a {
   }
 }
 
-/* ===== FIX PROJECT SLIDER POSITION ===== */
-
-/* 1️⃣ Force the parent of project-slider to column */
+/* ===== Force project slider below hero/about section ===== */
 .project-slider {
-    position: relative !important;
-    width: 100% !important;
-    float: none !important;
-    clear: both !important;
-    margin-top: 50px !important;
-    display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 800px !important;  /* keep your desktop width */
+  margin: 50px auto 0 auto !important;  /* push down with top margin */
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  z-index: 5; /* optional */
 }
 
-/* 2️⃣ Force parent containers to stack vertically */
-section, 
-.main-content, 
-.hero-section, 
-.container {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-}
-
-/* 3️⃣ Slider wrapper adjustments */
+/* Ensure slider wrapper and slides stay inside slider */
 .slider-wrapper {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: nowrap !important;
-    position: relative !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  width: 100% !important;
+  position: relative !important;
 }
 
-/* 4️⃣ Slide adjustments (optional, center content) */
+/* Slides stay full width inside slider */
 .project-slide {
-    margin: 0 auto !important;
+  min-width: 100% !important;
+  height: 100% !important;
 }
 
-/* 5️⃣ Media queries for desktop */
-@media (min-width: 992px) {
-    .project-slider {
-        margin-top: 60px !important;
-    }
+/* Parent containers fix */
+section,
+.container,
+.main-content,
+.hero-section {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
 }
+
 
 
 
