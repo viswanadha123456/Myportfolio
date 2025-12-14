@@ -1346,14 +1346,12 @@ button, a {
   }
 }
 
-/* Hide slider on desktop/laptop */
-@media (min-width: 601px) {
+/* Hide slider only on desktop/laptop */
+@media (min-width: 992px) {
   .project-slider {
     display: none !important;
   }
 }
-
-
 
 
 
