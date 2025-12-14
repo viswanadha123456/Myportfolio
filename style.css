@@ -1239,8 +1239,8 @@ button, a {
 
 /* Icon images – normal visible icons */
 .icon-img {
-  width: 30px !important;
-  height: 30px !important;
+  width: 40px !important;
+  height: 40px !important;
   background: none !important;
   border-radius: 0 !important;
 }
@@ -1267,6 +1267,7 @@ button, a {
     display: none !important;
   }
 }
+
 
 
 
