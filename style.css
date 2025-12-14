@@ -1308,6 +1308,14 @@ body {
     margin-right: 0 !important;
   }
 }
+/* Force parent container to column layout */
+section,
+.main-content,
+.container,
+.hero-section {
+  flex-direction: column !important;
+}
+
 
 
 
