@@ -1272,6 +1272,10 @@ button, a {
     display: none !important;
   }
 }
+.project-slider {
+  display: none !important;
+}
+
 
 
 
