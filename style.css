@@ -1266,15 +1266,8 @@ button, a {
   }
 }
 
-/* Hide project slider on desktop/laptop */
-@media (min-width: 769px) {
-  .project-slider {
-    display: none !important;
-  }
-}
-.project-slider {
-  display: none !important;
-}
+
+
 
 
 
