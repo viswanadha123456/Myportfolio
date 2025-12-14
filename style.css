@@ -1201,7 +1201,7 @@ button, a {
     font-size: 18px;
     font-weight: 700;
     color: #2b3a67;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -1212,24 +1212,19 @@ button, a {
   }
 
   .mobile-cert-box li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 14px;
-    color: #38475a;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
   }
 
   .mobile-cert-box a {
-    font-size: 13px;
     color: #1e3d8f;
     text-decoration: none;
-    margin-left: 10px;
+    transition: 0.2s;
   }
 
   .mobile-cert-box a:hover {
     text-decoration: underline;
+    color: #0d2a66;
   }
 }
 
