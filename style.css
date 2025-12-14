@@ -1275,39 +1275,82 @@ button, a {
 
 /* ===== Force project slider below hero/about section ===== */
 .project-slider {
-  position: relative !important;
-  width: 100% !important;
-  max-width: 800px !important;  /* keep your desktop width */
-  margin: 50px auto 0 auto !important;  /* push down with top margin */
-  float: none !important;
-  clear: both !important;
-  display: block !important;
-  z-index: 5; /* optional */
+  width: 100%;
+  max-width: 800px;       /* desktop width */
+  margin: 0 auto;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: #f0f4ff;
 }
 
-/* Ensure slider wrapper and slides stay inside slider */
 .slider-wrapper {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  justify-content: center !important;
-  width: 100% !important;
-  position: relative !important;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
-/* Slides stay full width inside slider */
 .project-slide {
-  min-width: 100% !important;
-  height: 100% !important;
+  min-width: 100%;         /* show one slide at a time */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-/* Parent containers fix */
-section,
-.container,
-.main-content,
-.hero-section {
-  display: flex !important;
-  flex-direction: column !important;
-  width: 100% !important;
+.project-content {
+  background: rgba(0,0,0,0.5);
+  padding: 12px;
+  width: 80%;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.proj-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.proj-arrow.left { left: 10px; }
+.proj-arrow.right { right: 10px; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .project-slider {
+    height: 250px;
+    max-width: 100%;
+    display: block;       /* ensure visible on mobile */
+  }
+  .project-content {
+    width: 90%;
+    font-size: 12px;
+  }
+  .proj-arrow {
+    padding: 8px;
+    font-size: 18px;
+  }
+}
+
+/* Hide slider on desktop/laptop */
+@media (min-width: 601px) {
+  .project-slider {
+    display: none !important;
+  }
 }
 
 
