@@ -1229,31 +1229,29 @@ button, a {
   }
 }
 /* Mobile Contact Icons container */
+/* FORCE remove white background from mobile icons */
+.m-icon {
+  background: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Icon images – normal visible icons */
+.icon-img {
+  width: 30px !important;
+  height: 30px !important;
+  background: none !important;
+  border-radius: 0 !important;
+}
+
+/* Container */
 .mobile-contact-icons {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   gap: 14px;
   margin: 16px 0;
-}
-
-/* Icon link */
-.m-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Icon images – clean & visible */
-.icon-img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.2s ease;
-}
-
-/* Hover / tap effect */
-.m-icon:hover .icon-img {
-  transform: scale(1.15);
 }
 
 /* Divider */
@@ -1266,11 +1264,9 @@ button, a {
 /* Hide on desktop */
 @media (min-width: 769px) {
   .mobile-contact-icons {
-    display: none;
+    display: none !important;
   }
 }
-
-
 
 
 
