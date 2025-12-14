@@ -1228,6 +1228,40 @@ button, a {
     color: #0d2a66;
   }
 }
+/* Mobile Contact Icons */
+.mobile-contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* Icon images */
+.icon-img {
+  width: 28px;
+  height: 28px;
+  transition: 0.2s;
+}
+
+.m-icon:hover .icon-img {
+  transform: scale(1.1);
+}
+
+/* Divider */
+.divider {
+  width: 1px;
+  height: 24px;
+  background: #ccc;
+}
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .mobile-contact-icons {
+    display: none;
+  }
+}
+
 
 
 
