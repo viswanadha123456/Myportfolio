@@ -1229,42 +1229,47 @@ button, a {
   }
 }
 /* Mobile Contact Icons container */
-/* FORCE remove white background from mobile icons */
-.m-icon {
-  background: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-
-/* Icon images – normal visible icons */
-.icon-img {
-  width: 40px !important;
-  height: 40px !important;
-  background: none !important;
-  border-radius: 0 !important;
-}
-
-/* Container */
+/* Mobile navbar icons container */
 .mobile-contact-icons {
-  display: flex !important;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 16px 0;
+  justify-content: center;
+  gap: 12px;              /* CONTROL spacing here */
 }
 
-/* Divider */
+/* Icon link */
+.m-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;         /* VERY IMPORTANT */
+  padding: 0;
+  margin: 0;
+}
+
+/* Icon images – same size, no extra space */
+.icon-img {
+  width: 26px;
+  height: 26px;
+  display: block;         /* removes inline img spacing */
+}
+
+/* Divider fix */
 .divider {
   width: 1px;
-  height: 26px;
-  background: rgba(0, 0, 0, 0.3);
+  height: 22px;
+  background: rgba(0, 0, 0, 0.25);
 }
 
-/* Hide on desktop */
+/* Hover / tap effect */
+.m-icon:hover .icon-img {
+  transform: scale(1.1);
+}
+
+/* Desktop hide */
 @media (min-width: 769px) {
   .mobile-contact-icons {
-    display: none !important;
+    display: none;
   }
 }
 
