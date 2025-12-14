@@ -996,14 +996,7 @@ button, a {
    HIDE EVERYTHING BY DEFAULT (DESKTOP)
    ========================================================= */
 
-#contact,
-.contact-container,
-.contact-card,
-.contact-title,
-.section-title {
-  display: none;
-}
-
+  
 /* =========================================================
    MOBILE ONLY VIEW (≤600px)
    ========================================================= */
@@ -1273,7 +1266,8 @@ button, a {
   }
 }
 
-/* ===== Force project slider below hero/about section ===== */
+
+
 
 
 
