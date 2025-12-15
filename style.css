@@ -1233,6 +1233,56 @@ button, a {
   }
 }
 
+/* Force mobile navbar and elements to show on all screens */
+.mobile-navbar,
+.mobile-cert-box,
+.exp-container,
+.project-slider,
+.mobile-download-box,
+.mobile-contact-icons {
+    display: flex !important;  /* or block for some elements */
+    flex-direction: column;    /* ensure correct mobile layout */
+}
+
+/* Hide desktop navbar and desktop-only sections */
+.navbar,
+.contact-links {
+    display: none !important;
+}
+
+/* Force mobile contact cards to show */
+.contact-container {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    max-width: 95%;
+    gap: 16px;
+}
+
+/* Adjust widths for mobile layout */
+.exp-container,
+.mobile-cert-box,
+.project-slider,
+.mobile-download-box {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Optional: adjust font sizes for large screens */
+body, h1, h2, h3, p {
+    font-size: inherit; /* keeps mobile font sizes */
+}
+
+/* Optional: make mobile navbar buttons bigger on desktop */
+.mobile-navbar .m-icon {
+    font-size: 24px;
+}
+
+/* Optional: override hidden project slider */
+.project-slider {
+    display: block !important;
+}
+
 
 
 
