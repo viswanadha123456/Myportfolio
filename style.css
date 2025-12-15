@@ -1120,33 +1120,6 @@ button, a {
    EXTRA SMALL PHONES (≤400px)
    ========================================================= */
 
-@media (max-width: 400px) {
-
-  .section-title {
-    font-size: 1.3rem;
-  }
-
-  .contact-title {
-    font-size: 1.4rem;
-  }
-
-  .contact-card {
-    padding: 12px;
-  }
-
-  .contact-card h4 {
-    font-size: 0.9rem;
-  }
-
-  .contact-card p {
-    font-size: 0.75rem;
-  }
-
-  .c-icon {
-    width: 24px;
-    height: 24px;
-  }
-}
 @media (max-width: 600px) {
 
   /* FIX text alignment inside contact cards */
@@ -1267,6 +1240,7 @@ button, a {
     display: none;
   }
 }
+
 
 
 
