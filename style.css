@@ -1215,6 +1215,14 @@ button, a {
     display: inline-block !important;
   }
 }
+@media (min-width: 601px) {
+  .contact-container,
+  .contact-title,
+  .contact-links {
+    display: none !important;
+  }
+}
+
 
 
 
