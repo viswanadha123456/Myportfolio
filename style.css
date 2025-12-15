@@ -178,6 +178,10 @@ body {
 .contact-item:hover .icon {
   filter: brightness(0.8);
 }
+@media (max-width: 600px) {
+  /* optional: hide only on mobile if needed */
+  /* .contact-links { display: none; } */
+}
 
 /* Section Title */
 /* Centered Section Title (like Education) */
@@ -1232,6 +1236,8 @@ button, a {
     display: block;
   }
 }
+
+
 
 
 
