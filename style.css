@@ -994,9 +994,6 @@ button, a {
 
 
 
-/* =========================================================
-   HIDE EVERYTHING BY DEFAULT (DESKTOP)
-   ========================================================= */
 
   
 /* =========================================================
@@ -1022,14 +1019,6 @@ button, a {
   padding-bottom: 6px;
 }
 
-/* Contact container – DESKTOP */
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  gap: 18px;
-}
 
 /* Contact cards */
 .contact-card {
@@ -1203,6 +1192,7 @@ button, a {
     display: none;
   }
 }
+
 
 
 
