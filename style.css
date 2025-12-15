@@ -1223,6 +1223,16 @@ button, a {
   }
 }
 
+.project-slider {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .project-slider {
+    display: block;
+  }
+}
+
 
 
 
