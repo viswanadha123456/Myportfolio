@@ -899,11 +899,22 @@ document.getElementById("downloadResumeBtn").onclick = function () {
     projSlides.style.transform = `translateX(-${projIndex * 100}%)`;
   }
 </script>
+  <script>
+const contactSection = document.querySelector('.contact-container');
+const contactTitle = document.querySelector('.contact-title');
+const contactBtn = document.getElementById('show-contact');
 
+contactBtn.addEventListener('click', () => {
+  contactSection.classList.add('show');
+  contactTitle.classList.add('show');
+  contactSection.scrollIntoView({ behavior: 'smooth' });
+});
+</script>
 
 
 </body>
 </html>
+
 
 
 
