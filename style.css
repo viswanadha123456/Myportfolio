@@ -1265,34 +1265,7 @@ button, a {
   transition: 0.2s;
 }
 
-/* Hide contact section initially for all devices */
-.contact-container {
-  display: none;
-  max-width: 900px;
-  margin: 40px auto;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  display: grid; /* grid layout when visible */
-}
 
-/* Contact title hidden initially */
-.contact-title {
-  display: none;
-  text-align: center;
-  font-size: 2rem;
-  color: #2a4d37;
-  font-weight: bold;
-  margin-bottom: 30px;
-  border-bottom: 4px solid rgb(148, 192, 148);
-  padding-bottom: 5px;
-}
-
-/* Show contact when active (desktop & mobile) */
-.contact-container.show,
-.contact-title.show {
-  display: grid; /* for container */
-  display: inline-block; /* for title */
-}
 
 
 
