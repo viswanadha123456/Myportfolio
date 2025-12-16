@@ -1265,6 +1265,64 @@ button, a {
   transition: 0.2s;
 }
 
+/* Navbar right icons - show only on desktop/laptop */
+.mobile-navbar {
+    display: none; /* Hide by default (for mobile) */
+}
+
+@media (min-width: 769px) {
+    .mobile-navbar {
+        display: flex;          /* Show on desktop/laptop */
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(148,192,148);
+        padding: 12px 18px;
+        position: sticky;
+        top: 0;
+        z-index: 200;
+    }
+
+    .mobile-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .m-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .icon-img {
+        width: 26px;
+        height: 26px;
+        display: block;
+    }
+
+    .divider {
+        width: 1px;
+        height: 22px;
+        background: rgba(255,255,255,0.5);
+    }
+}
+
+/* Hide mobile-specific elements on desktop */
+@media (min-width: 769px) {
+    .mobile-menu,
+    .mobile-download-box,
+    .exp-container,
+    .mobile-cert-box {
+        display: none !important;
+    }
+}
+
 
 
 
