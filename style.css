@@ -1237,6 +1237,64 @@ button, a {
   }
 }
 
+/* CERTIFICATIONS SECTION VISIBLE ON ALL SCREENS */
+.mobile-cert-box {
+  display: block;  /* show on all screen sizes */
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px 25px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #eef3ff, #f9fbff);
+  border: 1px solid #dce6ff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  font-family: Arial, sans-serif;
+}
+
+.mobile-cert-box h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b3a67;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mobile-cert-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-cert-box li {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mobile-cert-box a {
+  color: #1e3d8f;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.mobile-cert-box a:hover {
+  text-decoration: underline;
+  color: #0d2a66;
+}
+
+/* Remove any media query hiding */
+@media (max-width: 768px) {
+  .mobile-cert-box {
+    display: block; /* Already visible, safe to leave */
+  }
+}
+
+@media (min-width: 769px) {
+  /* Remove previous hiding rules if any */
+  .mobile-cert-box {
+    display: block !important;
+  }
+}
+
 
 
 
