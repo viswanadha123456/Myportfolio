@@ -1237,6 +1237,34 @@ button, a {
   }
 }
 
+/* Navbar right icons - always visible */
+.navbar-right-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;          /* spacing between icons */
+  margin-left: auto;   /* push to the right side */
+}
+
+.navbar-right-icons .nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-right-icons .nav-icon img {
+  width: 26px;       /* adjust icon size */
+  height: 26px;
+  display: block;
+}
+
+.navbar-right-icons .nav-icon:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
 
 
 
