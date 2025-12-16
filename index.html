@@ -652,6 +652,7 @@ I work across the full data lifecycle — from cleaning and structuring complex 
 </section>
 
   </section>
+   <button id="show-contact">Contact</button>
 <section id="contact" class="page-section" style="display:none;">
   <h2 class="contact-title">How to Reach Me</h2>
 
@@ -900,11 +901,23 @@ document.getElementById("downloadResumeBtn").onclick = function () {
   }
 </script>
 
+// Get elements
+const contactSection = document.getElementById('contact');
+const contactBtn = document.getElementById('show-contact');
+
+// Add click event to button
+contactBtn.addEventListener('click', () => {
+  // Show the contact section
+  contactSection.style.display = 'grid'; // or 'block'
+  // Scroll smoothly to it
+  contactSection.scrollIntoView({ behavior: 'smooth' });
+});
 
 
 
 </body>
 </html>
+
 
 
 
