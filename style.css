@@ -328,7 +328,7 @@ body {
 }
 
 /* Contact Section Title */
-.contact-title {
+.contacts-title {
   text-align: center;
   font-size: 2.3rem;
   color: #2a4d37;
@@ -340,7 +340,7 @@ body {
 }
 
 /* Main contact container */
-.contact-container {
+.contacts-container {
   max-width: 900px;
   margin: 0 auto;
   display: grid;
@@ -349,7 +349,7 @@ body {
 }
 
 /* Individual contact cards */
-.contact-card {
+.contacts-card {
   background: #ffffff;
   padding: 20px 25px;
   border-radius: 12px;
@@ -363,19 +363,19 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;  /* fixed transition to match other cards */
 }
 
-.contact-card:hover {
+.contacts-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.15);
 }
 
-.contact-card h4 {
+.contacts-card h4 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
   color: #1e3d29;
 }
 
-.contact-card p {
+.contacts-card p {
   margin: 3px 0 0;
   font-size: 0.95rem;
   color: #555;
@@ -1305,6 +1305,7 @@ button, a {
 .desktop-cert-box a:hover {
   text-decoration: underline;
 }
+
 
 
 
